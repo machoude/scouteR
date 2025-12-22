@@ -1,0 +1,56 @@
+---
+title: "Application Demo"
+editor: visual
+---
+
+## Scouting Application Walkthrough
+
+These videos demonstrate the main features of the scouting platform, including player filtering, team's budget overview, and simulation tool.
+
+## OFI
+
+In this case study for 2022-2023 season , we choose OFI of Greek Super League and we search for a winger to add to the team. The algorithm suggest various wingers and we chose a winger from Serie B. Also in the next step we remove from our list a member of the current team , just to see how the wage budget of the team is reduced. In the last part of this case study, we run a simulation of the Greek Super League with an extra team which is OFI (Simulated Team) with the addition of the winger that the algorithm suggested and the removal of the player we chose.
+
+<video width="100%" height="500" controls>
+
+<source src="videos/OFICaseStudy.mp4" type="video/mp4">
+
+Your browser does not support the video tag. </video>
+
+## Groningen
+
+### Part 1
+
+In this case study for 2022-2023 season , we choose Groningen of Eredivisie and we search for a winger and a striker to add to the team. We chose two players and then we remove a member of the current team for balancing the wages cost.
+
+<video controls style="width:100%; max-width:1200px; margin-bottom:40px;">
+
+<source src="videos/GroningenCaseStudy1.mp4" type="video/mp4">
+
+Your browser does not support the video tag. </video>
+
+### Part 2
+
+In the next part of this case study, we go back and search for a goalkeeper to add to the team. After the choosing one of the suggested , we go back to the team and remove one of the keepers for balancing the waging cost. In the simulation part, we can see how the Simulated Team performs in comparison with Groningen.
+
+<video width="100%" height="500" controls>
+
+<source src="videos/GroningenCaseStudy2.mp4" type="video/mp4">
+
+Your browser does not support the video tag. </video>
+
+## Limitations
+
+-   FM data is simulated, not the true presentation of players skills.
+
+-   Results are decision-support, not guarantees for the season 2022-2023.
+
+-   In the case of big european clubs the algorithm fails to find suitable players in some positions because those clubs already have the best of the best.
+
+-   If you want to analyze a different team , you need to refresh the app.
+
+## Launch App
+
+<a href=" https://machoude.shinyapps.io/livescoutingapp/" 
+   target="_blank"
+   class="btn btn-primary btn-lg"> Launch Scouting App </a>

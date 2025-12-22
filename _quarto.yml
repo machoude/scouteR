@@ -1,0 +1,25 @@
+project:
+  type: website
+  output-dir: docs
+  resources:
+    - videos/
+
+website:
+  title: "FM Scouting"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: methodology.qmd
+        text: Methodology
+      - href: app.qmd
+        text: Scouting App
+      - href: demo.qmd
+        text: Demo
+      - href: about.qmd
+        text: About
+
+format:
+  html:
+    theme: united
+    toc: true

@@ -1,0 +1,26 @@
+---
+title: "Player Search & Scouting Based on FM"
+format: html
+---
+
+## 
+
+## Project Overview
+
+This project uses Football Manager data to identify players that teams with limited scouting budget would not be possible to find.
+
+The goal is to support low-budget scouting .
+
+## What This App Does
+
+-   Position-Specific Player Scouting
+-   Shortlisting & Squad Construction
+-   Strategic Evaluation via Simulation
+
+## Live Application
+
+Interactive scouting tool that supports squad planning and transfer decision-making using Football Manager data. The app allows users to view their current team, identify suitable player replacements or upgrades from the previous season, and simulate how proposed transfers affect squad strength, wage structure, and competitive performance under budget constraints.
+
+## Data Rights and Non-Commercial Disclaimer
+
+All Football Manager data used in this analysis is the intellectual property of Sports Interactive. This project is entirely non-commercial and is conducted solely for research purposes. I have no intention to sell any of the data presented here. The dataset was obtained from the publicly available source provided at the following link: <https://www.kaggle.com/datasets/furkanuluta/football-manager-22-complete-player-dataset.> All rights for the original data remain with Sports Interactive and their respective licensors.

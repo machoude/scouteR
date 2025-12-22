@@ -1,0 +1,64 @@
+---
+title: "Methodology"
+format: html
+---
+
+## Data
+
+-   Source: Kaggle (<https://www.kaggle.com/datasets/furkanuluta/football-manager-22-complete-player-dataset>)
+
+-   Base Year : 2022-2023, for methodology evaluation and simulations
+
+-   Previous Year : 2021-2022 , for players search
+
+-   Player attributes
+
+    ## Football Manager Data Reliability
+
+    The process of evaluation how the data from FM in a specific league are close to reality is simple. First the CA of each player is calculated , then for each team the average CA of the best 16 players is calculated (see Top.n).To assess how closely the FM data matches reality, teams are first ranked according to their CA values. The rank differences between the CA-based order and the actual league standings are then calculated to measure how far the FM rankings deviate from real performance.
+
+    -   Top.n = the best players of the team based on the CA , which are used for the evaluation of the teams’s CA.
+
+    -   Accuracy = represents the percentage of teams whose CA-based ranking matches their actual league position, indicating how many teams FM correctly places in the real standings.
+
+    -   MARE (Mean Absolute Rank Error) = represents the average difference between the ranking of each team based on FM’s CA and their actual league ranking.
+
+        ```{r,echo=FALSE}
+        library(knitr)
+
+        df <- data.frame(
+        Season = c("2019–2020", "2020–2021", "2021–2022", "2022–2023"),
+        Top_N = 16,
+        Accuracy = c(42.9, 21.4, 14.3, 14.3),
+        MARE = c(1.1, 2.6, 2.3, 2.4)
+        )
+
+        kable(df, caption = "Greek Super League 1 — FM Accuracy Comparison")
+
+        ```
+
+        ```{r,echo=FALSE}
+
+        df <- data.frame(
+        Season = c("2019–2020", "2020–2021", "2021–2022", "2022–2023"),
+        Top_N = 16,
+        Accuracy = c(27.8, 11.1, 22.2, 16.7),
+        MARE = c(2.3, 3.1, 3.1, 2.4)
+        )
+
+        kable(
+        df,
+        caption = "Eredivisie — FM Accuracy Comparison"
+        )
+
+        ```
+
+        The metrics presented in the tables further demonstrate that FM data are close to reality and could be used in statistical models and comparative evaluations. In multiple cases, the results show meaningful predictive power and consistent performance across different leagues and seasons. This reliability means that FM-derived attributes can be used confidently to support automated scouting strategies. Overall, the tables confirm that FM is not only a game database but a high-quality analytical resource capable of producing actionable insights for real-world football applications.
+
+## Approach
+
+The proposed approach is designed to remain as unbiased as possible by anchoring all player evaluation to the characteristics of the existing squad in the base year. Rather than searching the entire player universe, the model identifies players from the previous season whose profiles are comparable or improve upon to the players currently occupying each role in the team. This relative, role-based comparison ensures that recommendations are contextualized within the team’s actual needs and constraints, reducing selection bias and overfitting to league-wide averages.
+
+By sourcing candidates from the prior year, the approach avoids forward-looking leakage while still capturing players with demonstrated performance stability. Once candidate players are identified, the framework evaluates how one or multiple transfers would alter the team’s internal dynamics, particularly in terms of collective ability and wage structure. This allows the user to assess not only individual upgrades but also the systemic impact of transfer decisions on squad balance and total budget, supporting informed trade-offs between performance gains and financial sustainability.
+
+## 

@@ -1,0 +1,18 @@
+---
+title: "About"
+format: html
+---
+
+## Background
+
+I am a data scientist with a focus on sports analytics and decision-support systems.
+
+## Motivation
+
+After hours of playing FM , I realised how close are the data of the first season to reality.This project was created to explore how player attribute data can be used to support scouting decisions, particularly for clubs operating with limited resources.
+
+## Contact
+
+For questions, feedback, or collaboration inquiries:
+
+-   Email: marios.choude\@gmail.com\
