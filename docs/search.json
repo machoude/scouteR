@@ -1,66 +1,45 @@
 [
   {
-    "objectID": "app.html",
-    "href": "app.html",
-    "title": "scouteR",
+    "objectID": "demo.html",
+    "href": "demo.html",
+    "title": "Application Demo",
     "section": "",
-    "text": "The live scouting app allows you to:\n\nChoose your team\nSearch for possible transfers\nCustomize your team by adding and removing players\nRun simulations to evaluate how the transfer effect the team\n\n\n\nThis component presents the baseline league table derived from FM based in the CA for the selected division. It serves as the reference point against which all subsequent analysis is performed, representing the expected competitive balance of the league before any squad modifications are introduced.\n\n\n\nThe My Team component displays the current squad of the selected club. It provides a clear overview of the team’s existing players position, wage, and CA, forming the structural and financial baseline used to evaluate potential improvements and transfers.\n\n\n\nThis component identifies candidate players from previous season whose profiles are comparable to, or improve upon, the current squad players by position. By conditioning recommendations on the characteristics of the existing team, the approach remains unbiased and context-aware, focusing on realistic upgrades rather than absolute star players.\n\n\n\nThis component merges the current squad with the shortlisted players into a single consolidated table. It enables direct evaluation of how prospective transfers alter the team’s overall composition and budget, including aggregated wage expenditure, while allowing users to remove players to test alternative squad configurations.\n\n\n\nThe simulation component evaluates the impact of the proposed squad changes on league performance. Adding a new team in the league which is the simulated team that the user created by combing the actual team with the transfers of that deemed worthy. Using algorithmic ranking and Monte Carlo simulations, it estimates how one or more transfers may influence league outcomes comparing the actual team with the simulated team while accounting for uncertainty, thereby linking recruitment decisions to expected competitive and financial consequences."
+    "text": "These videos demonstrate the main features of the scouting platform, including player filtering, team’s budget overview, and simulation tool."
   },
   {
-    "objectID": "app.html#interactive-scouting-tool",
-    "href": "app.html#interactive-scouting-tool",
-    "title": "scouteR",
+    "objectID": "demo.html#scouting-application-walkthrough",
+    "href": "demo.html#scouting-application-walkthrough",
+    "title": "Application Demo",
     "section": "",
-    "text": "The live scouting dashboard allows you to:\n\nChoose your team\n\nCompare development profiles\nIdentify retention and scouting targets"
+    "text": "These videos demonstrate the main features of the scouting platform, including player filtering, team’s budget overview, and simulation tool."
   },
   {
-    "objectID": "methodology.html",
-    "href": "methodology.html",
-    "title": "Methodology",
-    "section": "",
-    "text": "Source: Kaggle (https://www.kaggle.com/datasets/furkanuluta/football-manager-22-complete-player-dataset)\nBase Year : 2022-2023, for methodology evaluation and simulations\nPrevious Year : 2021-2022 , for players search\nPlayer attributes\n\nThe process of evaluation how the data from FM in a specific league are close to reality is simple. First the CA of each player is calculated , then for each team the average CA of the best 16 players is calculated (see Top.n).To assess how closely the FM data matches reality, teams are first ranked according to their CA values. The rank differences between the CA-based order and the actual league standings are then calculated to measure how far the FM rankings deviate from real performance.\n\nTop.n = the best players of the team based on the CA , which are used for the evaluation of the teams’s CA.\nAccuracy = represents the percentage of teams whose CA-based ranking matches their actual league position, indicating how many teams FM correctly places in the real standings.\nMARE (Mean Absolute Rank Error) = represents the average difference between the ranking of each team based on FM’s CA and their actual league ranking.\n\n\n\nGreek Super League 1 — FM Accuracy Comparison\n\n\nSeason\nTop_N\nAccuracy\nMARE\n\n\n\n\n2019–2020\n16\n42.9\n1.1\n\n\n2020–2021\n16\n21.4\n2.6\n\n\n2021–2022\n16\n14.3\n2.3\n\n\n2022–2023\n16\n14.3\n2.4\n\n\n\n\n\n\n\n\nEredivisie — FM Accuracy Comparison\n\n\nSeason\nTop_N\nAccuracy\nMARE\n\n\n\n\n2019–2020\n16\n27.8\n2.3\n\n\n2020–2021\n16\n11.1\n3.1\n\n\n2021–2022\n16\n22.2\n3.1\n\n\n2022–2023\n16\n16.7\n2.4\n\n\n\n\n\nThe metrics presented in the tables further demonstrate that FM data are close to reality and could be used in statistical models and comparative evaluations. In multiple cases, the results show meaningful predictive power and consistent performance across different leagues and seasons. This reliability means that FM-derived attributes can be used confidently to support automated scouting strategies. Overall, the tables confirm that FM is not only a game database but a high-quality analytical resource capable of producing actionable insights for real-world football applications."
+    "objectID": "demo.html#ofi",
+    "href": "demo.html#ofi",
+    "title": "Application Demo",
+    "section": "OFI",
+    "text": "OFI\nIn this case study for 2022-2023 season , we choose OFI of Greek Super League and we search for a winger to add to the team. The algorithm suggest various wingers and we chose a winger from Serie B. Also in the next step we remove from our list a member of the current team , just to see how the wage budget of the team is reduced. In the last part of this case study, we run a simulation of the Greek Super League with an extra team which is OFI (Simulated Team) with the addition of the winger that the algorithm suggested and the removal of the player we chose.\n\n\nYour browser does not support the video tag."
   },
   {
-    "objectID": "methodology.html#data",
-    "href": "methodology.html#data",
-    "title": "Methodology",
-    "section": "",
-    "text": "Source: Kaggle (https://www.kaggle.com/datasets/furkanuluta/football-manager-22-complete-player-dataset)\nBase Year : 2022-2023, for methodology evaluation and simulations\nPrevious Year : 2021-2022 , for players search\nPlayer attributes\n\nThe process of evaluation how the data from FM in a specific league are close to reality is simple. First the CA of each player is calculated , then for each team the average CA of the best 16 players is calculated (see Top.n).To assess how closely the FM data matches reality, teams are first ranked according to their CA values. The rank differences between the CA-based order and the actual league standings are then calculated to measure how far the FM rankings deviate from real performance.\n\nTop.n = the best players of the team based on the CA , which are used for the evaluation of the teams’s CA.\nAccuracy = represents the percentage of teams whose CA-based ranking matches their actual league position, indicating how many teams FM correctly places in the real standings.\nMARE (Mean Absolute Rank Error) = represents the average difference between the ranking of each team based on FM’s CA and their actual league ranking.\n\n\n\nGreek Super League 1 — FM Accuracy Comparison\n\n\nSeason\nTop_N\nAccuracy\nMARE\n\n\n\n\n2019–2020\n16\n42.9\n1.1\n\n\n2020–2021\n16\n21.4\n2.6\n\n\n2021–2022\n16\n14.3\n2.3\n\n\n2022–2023\n16\n14.3\n2.4\n\n\n\n\n\n\n\n\nEredivisie — FM Accuracy Comparison\n\n\nSeason\nTop_N\nAccuracy\nMARE\n\n\n\n\n2019–2020\n16\n27.8\n2.3\n\n\n2020–2021\n16\n11.1\n3.1\n\n\n2021–2022\n16\n22.2\n3.1\n\n\n2022–2023\n16\n16.7\n2.4\n\n\n\n\n\nThe metrics presented in the tables further demonstrate that FM data are close to reality and could be used in statistical models and comparative evaluations. In multiple cases, the results show meaningful predictive power and consistent performance across different leagues and seasons. This reliability means that FM-derived attributes can be used confidently to support automated scouting strategies. Overall, the tables confirm that FM is not only a game database but a high-quality analytical resource capable of producing actionable insights for real-world football applications."
+    "objectID": "demo.html#groningen",
+    "href": "demo.html#groningen",
+    "title": "Application Demo",
+    "section": "Groningen",
+    "text": "Groningen\n\nPart 1\nIn this case study for 2022-2023 season , we choose Groningen of Eredivisie and we search for a winger and a striker to add to the team. We chose two players and then we remove a member of the current team for balancing the wages cost.\n\n\nYour browser does not support the video tag. \n\n\nPart 2\nIn the next part of this case study, we go back and search for a goalkeeper to add to the team. After the choosing one of the suggested , we go back to the team and remove one of the keepers for balancing the waging cost. In the simulation part, we can see how the Simulated Team performs in comparison with Groningen.\n\n\nYour browser does not support the video tag."
   },
   {
-    "objectID": "methodology.html#approach",
-    "href": "methodology.html#approach",
-    "title": "Methodology",
-    "section": "Approach",
-    "text": "Approach\nThe proposed approach is designed to remain as unbiased as possible by anchoring all player evaluation to the characteristics of the existing squad in the base year. Rather than searching the entire player universe, the model identifies players from the previous season whose profiles are comparable or improve upon to the players currently occupying each role in the team. This relative, role-based comparison ensures that recommendations are contextualized within the team’s actual needs and constraints, reducing selection bias and overfitting to league-wide averages.\nBy sourcing candidates from the prior year, the approach avoids forward-looking leakage while still capturing players with demonstrated performance stability. Once candidate players are identified, the framework evaluates how one or multiple transfers would alter the team’s internal dynamics, particularly in terms of collective ability and wage structure. This allows the user to assess not only individual upgrades but also the systemic impact of transfer decisions on squad balance and total budget, supporting informed trade-offs between performance gains and financial sustainability."
-  },
-  {
-    "objectID": "methodology.html#limitations",
-    "href": "methodology.html#limitations",
-    "title": "Methodology",
+    "objectID": "demo.html#limitations",
+    "href": "demo.html#limitations",
+    "title": "Application Demo",
     "section": "Limitations",
-    "text": "Limitations\n\nFM data is simulated\nResults are decision-support, not guarantees"
+    "text": "Limitations\n\nFM data is simulated, not the true presentation of players skills.\nResults are decision-support, not guarantees for the season 2022-2023.\nIn the case of big european clubs the algorithm fails to find suitable players in some positions because those clubs already have the best of the best.\nIf you want to analyze a different team , you need to refresh the app."
   },
   {
-    "objectID": "index.html#project-overview",
-    "href": "index.html#project-overview",
-    "title": "Player Search & Scouting Based on FM",
-    "section": "Project Overview",
-    "text": "Project Overview\nThis project uses Football Manager data to identify players that teams with limited scouting budget would not be possible to find.\nThe goal is to support low-budget scouting ."
-  },
-  {
-    "objectID": "index.html#what-this-platform-does",
-    "href": "index.html#what-this-platform-does",
-    "title": "Player Search & Scouting Based on FM",
-    "section": "What This Platform Does",
-    "text": "What This Platform Does\n\nTeam Analysis & Benchmarking\nPosition-Specific Player Scouting\nShortlisting & Squad Construction\nStrategic Evaluation via Simulation"
-  },
-  {
-    "objectID": "index.html#live-application",
-    "href": "index.html#live-application",
-    "title": "Player Search & Scouting Based on FM",
-    "section": "Live Application",
-    "text": "Live Application\nInteractive scouting tool that supports squad planning and transfer decision-making using Football Manager data. The app allows users to view their current team, identify suitable player replacements or upgrades from the previous season, and simulate how proposed transfers affect squad strength, wage structure, and competitive performance under budget constraints."
+    "objectID": "demo.html#launch-app",
+    "href": "demo.html#launch-app",
+    "title": "Application Demo",
+    "section": "Launch App",
+    "text": "Launch App\n Launch Scouting App"
   },
   {
     "objectID": "about.html",
@@ -84,32 +63,67 @@
     "text": "Motivation\nAfter hours of playing FM , I realised how close are the data of the first season to reality.This project was created to explore how player attribute data can be used to support scouting decisions, particularly for clubs operating with limited resources."
   },
   {
-    "objectID": "about.html#approach",
-    "href": "about.html#approach",
-    "title": "About",
-    "section": "Approach",
-    "text": "Approach\nRather than relying on static player snapshots, the platform analyzes multi-season development trajectories to identify late bloomers, retention candidates, and undervalued profiles."
-  },
-  {
-    "objectID": "about.html#intended-use",
-    "href": "about.html#intended-use",
-    "title": "About",
-    "section": "Intended Use",
-    "text": "Intended Use\nThe scouting application is designed for analysts, scouts, and technically minded football professionals who want analytical support in player evaluation rather than automated recommendations."
-  },
-  {
-    "objectID": "about.html#transparency",
-    "href": "about.html#transparency",
-    "title": "About",
-    "section": "Transparency",
-    "text": "Transparency\nThe analysis is based on Football Manager data and is intended as a decision-support tool. Outputs should be interpreted as guidance rather than definitive assessments."
-  },
-  {
     "objectID": "about.html#contact",
     "href": "about.html#contact",
     "title": "About",
     "section": "Contact",
     "text": "Contact\nFor questions, feedback, or collaboration inquiries:\n\nEmail: marios.choude@gmail.com"
+  },
+  {
+    "objectID": "index.html#project-overview",
+    "href": "index.html#project-overview",
+    "title": "Player Search & Scouting Based on FM",
+    "section": "Project Overview",
+    "text": "Project Overview\nThis project uses Football Manager data to identify players that teams with limited scouting budget would not be possible to find.\nThe goal is to support low-budget scouting ."
+  },
+  {
+    "objectID": "index.html#what-this-app-does",
+    "href": "index.html#what-this-app-does",
+    "title": "Player Search & Scouting Based on FM",
+    "section": "What This App Does",
+    "text": "What This App Does\n\nPosition-Specific Player Scouting\nShortlisting & Squad Construction\nStrategic Evaluation via Simulation"
+  },
+  {
+    "objectID": "index.html#live-application",
+    "href": "index.html#live-application",
+    "title": "Player Search & Scouting Based on FM",
+    "section": "Live Application",
+    "text": "Live Application\nInteractive scouting tool that supports squad planning and transfer decision-making using Football Manager data. The app allows users to view their current team, identify suitable player replacements or upgrades from the previous season, and simulate how proposed transfers affect squad strength, wage structure, and competitive performance under budget constraints."
+  },
+  {
+    "objectID": "index.html#data-rights-and-non-commercial-disclaimer",
+    "href": "index.html#data-rights-and-non-commercial-disclaimer",
+    "title": "Player Search & Scouting Based on FM",
+    "section": "Data Rights and Non-Commercial Disclaimer",
+    "text": "Data Rights and Non-Commercial Disclaimer\nAll Football Manager data used in this analysis is the intellectual property of Sports Interactive. This project is entirely non-commercial and is conducted solely for research purposes. I have no intention to sell any of the data presented here. The dataset was obtained from the publicly available source provided at the following link: https://www.kaggle.com/datasets/furkanuluta/football-manager-22-complete-player-dataset. All rights for the original data remain with Sports Interactive and their respective licensors."
+  },
+  {
+    "objectID": "methodology.html",
+    "href": "methodology.html",
+    "title": "Methodology",
+    "section": "",
+    "text": "Source: Kaggle (https://www.kaggle.com/datasets/furkanuluta/football-manager-22-complete-player-dataset)\nBase Year : 2022-2023, for methodology evaluation and simulations\nPrevious Year : 2021-2022 , for players search\nPlayer attributes\n\nThe process of evaluation how the data from FM in a specific league are close to reality is simple. First the CA of each player is calculated , then for each team the average CA of the best 16 players is calculated (see Top.n).To assess how closely the FM data matches reality, teams are first ranked according to their CA values. The rank differences between the CA-based order and the actual league standings are then calculated to measure how far the FM rankings deviate from real performance.\n\nTop.n = the best players of the team based on the CA , which are used for the evaluation of the teams’s CA.\nAccuracy = represents the percentage of teams whose CA-based ranking matches their actual league position, indicating how many teams FM correctly places in the real standings.\nMARE (Mean Absolute Rank Error) = represents the average difference between the ranking of each team based on FM’s CA and their actual league ranking.\n\n\n\nGreek Super League 1 — FM Accuracy Comparison\n\n\nSeason\nTop_N\nAccuracy\nMARE\n\n\n\n\n2019–2020\n16\n42.9\n1.1\n\n\n2020–2021\n16\n21.4\n2.6\n\n\n2021–2022\n16\n14.3\n2.3\n\n\n2022–2023\n16\n14.3\n2.4\n\n\n\n\n\n\n\n\nEredivisie — FM Accuracy Comparison\n\n\nSeason\nTop_N\nAccuracy\nMARE\n\n\n\n\n2019–2020\n16\n27.8\n2.3\n\n\n2020–2021\n16\n11.1\n3.1\n\n\n2021–2022\n16\n22.2\n3.1\n\n\n2022–2023\n16\n16.7\n2.4\n\n\n\n\n\nThe metrics presented in the tables further demonstrate that FM data are close to reality and could be used in statistical models and comparative evaluations. In multiple cases, the results show meaningful predictive power and consistent performance across different leagues and seasons. This reliability means that FM-derived attributes can be used confidently to support automated scouting strategies. Overall, the tables confirm that FM is not only a game database but a high-quality analytical resource capable of producing actionable insights for real-world football applications."
+  },
+  {
+    "objectID": "methodology.html#data",
+    "href": "methodology.html#data",
+    "title": "Methodology",
+    "section": "",
+    "text": "Source: Kaggle (https://www.kaggle.com/datasets/furkanuluta/football-manager-22-complete-player-dataset)\nBase Year : 2022-2023, for methodology evaluation and simulations\nPrevious Year : 2021-2022 , for players search\nPlayer attributes\n\nThe process of evaluation how the data from FM in a specific league are close to reality is simple. First the CA of each player is calculated , then for each team the average CA of the best 16 players is calculated (see Top.n).To assess how closely the FM data matches reality, teams are first ranked according to their CA values. The rank differences between the CA-based order and the actual league standings are then calculated to measure how far the FM rankings deviate from real performance.\n\nTop.n = the best players of the team based on the CA , which are used for the evaluation of the teams’s CA.\nAccuracy = represents the percentage of teams whose CA-based ranking matches their actual league position, indicating how many teams FM correctly places in the real standings.\nMARE (Mean Absolute Rank Error) = represents the average difference between the ranking of each team based on FM’s CA and their actual league ranking.\n\n\n\nGreek Super League 1 — FM Accuracy Comparison\n\n\nSeason\nTop_N\nAccuracy\nMARE\n\n\n\n\n2019–2020\n16\n42.9\n1.1\n\n\n2020–2021\n16\n21.4\n2.6\n\n\n2021–2022\n16\n14.3\n2.3\n\n\n2022–2023\n16\n14.3\n2.4\n\n\n\n\n\n\n\n\nEredivisie — FM Accuracy Comparison\n\n\nSeason\nTop_N\nAccuracy\nMARE\n\n\n\n\n2019–2020\n16\n27.8\n2.3\n\n\n2020–2021\n16\n11.1\n3.1\n\n\n2021–2022\n16\n22.2\n3.1\n\n\n2022–2023\n16\n16.7\n2.4\n\n\n\n\n\nThe metrics presented in the tables further demonstrate that FM data are close to reality and could be used in statistical models and comparative evaluations. In multiple cases, the results show meaningful predictive power and consistent performance across different leagues and seasons. This reliability means that FM-derived attributes can be used confidently to support automated scouting strategies. Overall, the tables confirm that FM is not only a game database but a high-quality analytical resource capable of producing actionable insights for real-world football applications."
+  },
+  {
+    "objectID": "methodology.html#approach",
+    "href": "methodology.html#approach",
+    "title": "Methodology",
+    "section": "Approach",
+    "text": "Approach\nThe proposed approach is designed to remain as unbiased as possible by anchoring all player evaluation to the characteristics of the existing squad in the base year. Rather than searching the entire player universe, the model identifies players from the previous season whose profiles are comparable or improve upon to the players currently occupying each role in the team. This relative, role-based comparison ensures that recommendations are contextualized within the team’s actual needs and constraints, reducing selection bias and overfitting to league-wide averages.\nBy sourcing candidates from the prior year, the approach avoids forward-looking leakage while still capturing players with demonstrated performance stability. Once candidate players are identified, the framework evaluates how one or multiple transfers would alter the team’s internal dynamics, particularly in terms of collective ability and wage structure. This allows the user to assess not only individual upgrades but also the systemic impact of transfer decisions on squad balance and total budget, supporting informed trade-offs between performance gains and financial sustainability."
+  },
+  {
+    "objectID": "app.html",
+    "href": "app.html",
+    "title": "scouteR",
+    "section": "",
+    "text": "The live scouting app allows you to:\n\nChoose your team\nSearch for possible transfers\nCustomize your team by adding and removing players\nRun simulations to evaluate how the transfer effect the team\n\n\n\nThis component presents the baseline league table derived from FM based in the CA for the selected division. It serves as the reference point against which all subsequent analysis is performed, representing the expected competitive balance of the league before any squad modifications are introduced.\n\n\n\nThe My Team component displays the current squad of the selected club. It provides a clear overview of the team’s existing players position, wage, and CA, forming the structural and financial baseline used to evaluate potential improvements and transfers.\n\n\n\nThis component identifies candidate players from previous season whose profiles are comparable to, or improve upon, the current squad players by position. By conditioning recommendations on the characteristics of the existing team, the approach remains unbiased and context-aware, focusing on realistic upgrades rather than absolute star players.\n\n\n\nThis component merges the current squad with the shortlisted players into a single consolidated table. It enables direct evaluation of how prospective transfers alter the team’s overall composition and budget, including aggregated wage expenditure, while allowing users to remove players to test alternative squad configurations.\n\n\n\nThe simulation component evaluates the impact of the proposed squad changes on league performance. Adding a new team in the league which is the simulated team that the user created by combing the actual team with the transfers of that deemed worthy. Using algorithmic ranking and Monte Carlo simulations, it estimates how one or more transfers may influence league outcomes comparing the actual team with the simulated team while accounting for uncertainty, thereby linking recruitment decisions to expected competitive and financial consequences."
   },
   {
     "objectID": "app.html#base-year",
@@ -133,13 +147,6 @@
     "text": "This component identifies candidate players from previous season whose profiles are comparable to, or improve upon, the current squad players by position. By conditioning recommendations on the characteristics of the existing team, the approach remains unbiased and context-aware, focusing on realistic upgrades rather than absolute star players."
   },
   {
-    "objectID": "app.html#shortlist",
-    "href": "app.html#shortlist",
-    "title": "scouteR",
-    "section": "",
-    "text": "The Shortlist allows the user to interactively collect and manage potential transfer targets. It acts as a working set for experimentation, enabling users to compare alternatives, refine candidate selections, and control duplication before assessing squad-wide effects."
-  },
-  {
     "objectID": "app.html#shortlist-my-team",
     "href": "app.html#shortlist-my-team",
     "title": "scouteR",
@@ -152,75 +159,5 @@
     "title": "scouteR",
     "section": "",
     "text": "The simulation component evaluates the impact of the proposed squad changes on league performance. Adding a new team in the league which is the simulated team that the user created by combing the actual team with the transfers of that deemed worthy. Using algorithmic ranking and Monte Carlo simulations, it estimates how one or more transfers may influence league outcomes comparing the actual team with the simulated team while accounting for uncertainty, thereby linking recruitment decisions to expected competitive and financial consequences."
-  },
-  {
-    "objectID": "app.html#launch-app",
-    "href": "app.html#launch-app",
-    "title": "scouteR",
-    "section": "",
-    "text": "Launch Scouting App"
-  },
-  {
-    "objectID": "index.html#what-this-app-does",
-    "href": "index.html#what-this-app-does",
-    "title": "Player Search & Scouting Based on FM",
-    "section": "What This App Does",
-    "text": "What This App Does\n\nPosition-Specific Player Scouting\nShortlisting & Squad Construction\nStrategic Evaluation via Simulation"
-  },
-  {
-    "objectID": "index.html#data-rights-and-non-commercial-disclaimer",
-    "href": "index.html#data-rights-and-non-commercial-disclaimer",
-    "title": "Player Search & Scouting Based on FM",
-    "section": "Data Rights and Non-Commercial Disclaimer",
-    "text": "Data Rights and Non-Commercial Disclaimer\nAll Football Manager data used in this analysis is the intellectual property of Sports Interactive. This project is entirely non-commercial and is conducted solely for research purposes. I have no intention to sell any of the data presented here. The dataset was obtained from the publicly available source provided at the following link: https://www.kaggle.com/datasets/furkanuluta/football-manager-22-complete-player-dataset. All rights for the original data remain with Sports Interactive and their respective licensors."
-  },
-  {
-    "objectID": "demo.html",
-    "href": "demo.html",
-    "title": "Application Demo",
-    "section": "",
-    "text": "These videos demonstrate the main features of the scouting platform, including player filtering, team’s budget overview, and simulation tool."
-  },
-  {
-    "objectID": "demo.html#scouting-application-walkthrough",
-    "href": "demo.html#scouting-application-walkthrough",
-    "title": "Application Demo",
-    "section": "",
-    "text": "These videos demonstrate the main features of the scouting platform, including player filtering, team’s budget overview, and simulation tool."
-  },
-  {
-    "objectID": "demo.html#launch-app",
-    "href": "demo.html#launch-app",
-    "title": "Application Demo",
-    "section": "Launch App",
-    "text": "Launch App\n Launch Scouting App"
-  },
-  {
-    "objectID": "demo.html#ofi",
-    "href": "demo.html#ofi",
-    "title": "Application Demo",
-    "section": "OFI",
-    "text": "OFI\nIn this case study for 2022-2023 season , we choose OFI of Greek Super League and we search for a winger to add to the team. The algorithm suggest various wingers and we chose a winger from Serie B. Also in the next step we remove from our list a member of the current team , just to see how the wage budget of the team is reduced. In the last part of this case study, we run a simulation of the Greek Super League with an extra team which is OFI (Simulated Team) with the addition of the winger that the algorithm suggested and the removal of the player we chose.\n\n\nYour browser does not support the video tag."
-  },
-  {
-    "objectID": "demo.html#groningen",
-    "href": "demo.html#groningen",
-    "title": "Application Demo",
-    "section": "Groningen",
-    "text": "Groningen\n\nPart 1\nIn this case study for 2022-2023 season , we choose Groningen of Eredivisie and we search for a winger and a striker to add to the team. We chose two players and then we remove a member of the current team for balancing the wages cost.\n\n\nYour browser does not support the video tag. \n\n\nPart 2\nIn the next part of this case study, we go back and search for a goalkeeper to add to the team. After the choosing one of the suggested , we go back to the team and remove one of the keepers for balancing the waging cost. In the simulation part, we can see how the Simulated Team performs in comparison with Groningen.\n\n\nYour browser does not support the video tag."
-  },
-  {
-    "objectID": "demo.html#test",
-    "href": "demo.html#test",
-    "title": "Application Demo",
-    "section": "test",
-    "text": "test\n\n\nYour browser does not support the video tag."
-  },
-  {
-    "objectID": "demo.html#limitations",
-    "href": "demo.html#limitations",
-    "title": "Application Demo",
-    "section": "Limitations",
-    "text": "Limitations\n\nFM data is simulated, not the true presentation of players skills.\nResults are decision-support, not guarantees for the season 2022-2023.\nIn the case of big european clubs the algorithm fails to find suitable players in some positions because those clubs already have the best of the best.\nIf you want to analyze a different team , you need to refresh the app."
   }
 ]
