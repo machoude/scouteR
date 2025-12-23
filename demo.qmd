@@ -5,7 +5,7 @@ editor: visual
 
 ## Scouting Application Walkthrough
 
-These videos demonstrate the main features of the scouting platform, including player filtering, team's budget overview, and simulation tool.
+Those video demonstrate the main features of the scouting platform, including player filtering, team's budget overview, and simulation tool.
 
 ## OFI
 
@@ -41,13 +41,9 @@ Your browser does not support the video tag. </video>
 
 ## Limitations
 
--   FM data is simulated, not the true presentation of players skills.
-
--   Results are decision-support, not guarantees for the season 2022-2023.
-
--   In the case of big european clubs the algorithm fails to find suitable players in some positions because those clubs already have the best of the best.
-
--   If you want to analyze a different team , you need to refresh the app.
+-   FM data is simulated
+-   Results are decision-support, not guarantees
+-   
 
 ## Launch App
 
