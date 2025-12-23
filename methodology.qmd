@@ -15,7 +15,7 @@ format: html
 
     ## Football Manager Data Reliability
 
-    The process of evaluation how the data from FM in a specific league are close to reality is simple. First the CA of each player is calculated , then for each team the average CA of the best 16 players is calculated (see Top.n).To assess how closely the FM data matches reality, teams are first ranked according to their CA values. The rank differences between the CA-based order and the actual league standings are then calculated to measure how far the FM rankings deviate from real performance.
+    The process of evaluation how the data from FM in a specific league are close to reality is simple. First the Current Ability (CA) of each player is calculated , then for each team the average CA of the best 16 players is calculated (see Top.n).To assess how closely the FM data matches reality, teams are first ranked according to their CA values. The rank differences between the CA-based order and the actual league standings are then calculated to measure how far the FM rankings deviate from real performance.
 
     -   Top.n = the best players of the team based on the CA , which are used for the evaluation of the teams’s CA.
 
