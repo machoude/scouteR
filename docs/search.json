@@ -4,14 +4,14 @@
     "href": "demo.html",
     "title": "Application Demo",
     "section": "",
-    "text": "These videos demonstrate the main features of the scouting platform, including player filtering, team’s budget overview, and simulation tool."
+    "text": "Those video demonstrate the main features of the scouting platform, including player filtering, team’s budget overview, and simulation tool."
   },
   {
     "objectID": "demo.html#scouting-application-walkthrough",
     "href": "demo.html#scouting-application-walkthrough",
     "title": "Application Demo",
     "section": "",
-    "text": "These videos demonstrate the main features of the scouting platform, including player filtering, team’s budget overview, and simulation tool."
+    "text": "Those video demonstrate the main features of the scouting platform, including player filtering, team’s budget overview, and simulation tool."
   },
   {
     "objectID": "demo.html#ofi",
@@ -32,7 +32,7 @@
     "href": "demo.html#limitations",
     "title": "Application Demo",
     "section": "Limitations",
-    "text": "Limitations\n\nFM data is simulated, not the true presentation of players skills.\nResults are decision-support, not guarantees for the season 2022-2023.\nIn the case of big european clubs the algorithm fails to find suitable players in some positions because those clubs already have the best of the best.\nIf you want to analyze a different team , you need to refresh the app."
+    "text": "Limitations\n\nFM data is simulated\nResults are decision-support, not guarantees"
   },
   {
     "objectID": "demo.html#launch-app",
@@ -95,7 +95,7 @@
     "href": "index.html#data-rights-and-non-commercial-disclaimer",
     "title": "Player Search & Scouting Based on FM",
     "section": "Data Rights and Non-Commercial Disclaimer",
-    "text": "Data Rights and Non-Commercial Disclaimer\nAll Football Manager data used in this analysis is the intellectual property of Sports Interactive. This project is entirely non-commercial and is conducted solely for research purposes. I have no intention to sell any of the data presented here. The dataset was obtained from the publicly available source provided at the following link: https://www.kaggle.com/datasets/furkanuluta/football-manager-22-complete-player-dataset. All rights for the original data remain with Sports Interactive and their respective licensors."
+    "text": "Data Rights and Non-Commercial Disclaimer\nAll Football Manager data used in this analysis is the intellectual property of Sports Interactive. This project is entirely non-commercial and is conducted solely for research purposes. I have no intention to sell any of the data presented here. The dataset was obtained from the publicly available source provided at the following link: https://www.kaggle.com/datasets/furkanuluta/football-manager-22-complete-player-dataset . All rights for the original data remain with Sports Interactive and their respective licensors."
   },
   {
     "objectID": "methodology.html",
