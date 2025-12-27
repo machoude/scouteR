@@ -42,8 +42,8 @@ Your browser does not support the video tag. </video>
 ## Limitations
 
 -   FM data is simulated
+
 -   Results are decision-support, not guarantees
--   
 
 ## Launch App
 
