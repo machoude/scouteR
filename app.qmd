@@ -1,5 +1,5 @@
 ---
-title: "scouteR"
+title: "FMscouteR"
 ---
 
 # Interactive Tool

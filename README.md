@@ -1,4 +1,4 @@
-# scouteR
+# FMscouteR
 
 A football scouting and player development analytics platform built using Football Manager data (2020–2023), for the season 2022-2023.
 
