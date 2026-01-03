@@ -121,42 +121,42 @@
   {
     "objectID": "app.html",
     "href": "app.html",
-    "title": "FMscouteR",
+    "title": "fmscouteR",
     "section": "",
     "text": "The live scouting app allows you to:\n\nChoose your team\nSearch for possible transfers\nCustomize your team by adding and removing players\nRun simulations to evaluate how the transfer effect the team\n\n\n\nThis component presents the baseline league table derived from FM based in the CA for the selected division. It serves as the reference point against which all subsequent analysis is performed, representing the expected competitive balance of the league before any squad modifications are introduced.\n\n\n\nThe My Team component displays the current squad of the selected club. It provides a clear overview of the team’s existing players position, wage, and CA, forming the structural and financial baseline used to evaluate potential improvements and transfers.\n\n\n\nThis component identifies candidate players from previous season whose profiles are comparable to, or improve upon, the current squad players by position. By conditioning recommendations on the characteristics of the existing team, the approach remains unbiased and context-aware, focusing on realistic upgrades rather than absolute star players.\n\n\n\nThis component merges the current squad with the shortlisted players into a single consolidated table. It enables direct evaluation of how prospective transfers alter the team’s overall composition and budget, including aggregated wage expenditure, while allowing users to remove players to test alternative squad configurations.\n\n\n\nThe simulation component evaluates the impact of the proposed squad changes on league performance. Adding a new team in the league which is the simulated team that the user created by combing the actual team with the transfers of that deemed worthy. Using algorithmic ranking and Monte Carlo simulations, it estimates how one or more transfers may influence league outcomes comparing the actual team with the simulated team while accounting for uncertainty, thereby linking recruitment decisions to expected competitive and financial consequences."
   },
   {
     "objectID": "app.html#base-year",
     "href": "app.html#base-year",
-    "title": "FMscouteR",
+    "title": "fmscouteR",
     "section": "",
     "text": "This component presents the baseline league table derived from FM based in the CA for the selected division. It serves as the reference point against which all subsequent analysis is performed, representing the expected competitive balance of the league before any squad modifications are introduced."
   },
   {
     "objectID": "app.html#my-team",
     "href": "app.html#my-team",
-    "title": "FMscouteR",
+    "title": "fmscouteR",
     "section": "",
     "text": "The My Team component displays the current squad of the selected club. It provides a clear overview of the team’s existing players position, wage, and CA, forming the structural and financial baseline used to evaluate potential improvements and transfers."
   },
   {
     "objectID": "app.html#recommended-players",
     "href": "app.html#recommended-players",
-    "title": "FMscouteR",
+    "title": "fmscouteR",
     "section": "",
     "text": "This component identifies candidate players from previous season whose profiles are comparable to, or improve upon, the current squad players by position. By conditioning recommendations on the characteristics of the existing team, the approach remains unbiased and context-aware, focusing on realistic upgrades rather than absolute star players."
   },
   {
     "objectID": "app.html#shortlist-my-team",
     "href": "app.html#shortlist-my-team",
-    "title": "FMscouteR",
+    "title": "fmscouteR",
     "section": "",
     "text": "This component merges the current squad with the shortlisted players into a single consolidated table. It enables direct evaluation of how prospective transfers alter the team’s overall composition and budget, including aggregated wage expenditure, while allowing users to remove players to test alternative squad configurations."
   },
   {
     "objectID": "app.html#simulation-results",
     "href": "app.html#simulation-results",
-    "title": "FMscouteR",
+    "title": "fmscouteR",
     "section": "",
     "text": "The simulation component evaluates the impact of the proposed squad changes on league performance. Adding a new team in the league which is the simulated team that the user created by combing the actual team with the transfers of that deemed worthy. Using algorithmic ranking and Monte Carlo simulations, it estimates how one or more transfers may influence league outcomes comparing the actual team with the simulated team while accounting for uncertainty, thereby linking recruitment decisions to expected competitive and financial consequences."
   }
